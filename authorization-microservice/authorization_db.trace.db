@@ -1,0 +1,12 @@
+2017-08-13 11:25:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE UUDUUD RENAME SALAM[*] "; expected "COLUMN, CONSTRAINT, TO"; SQL statement:
+ALTER TABLE uuduud RENAME salam [42001-196]
+2017-08-13 11:26:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE UUDUUD RENAME 'salammm'[*] "; expected "COLUMN, CONSTRAINT, TO"; SQL statement:
+alter table uuduud rename 'salammm' [42001-196]
+2017-08-13 11:26:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE 'uuduud'[*] RENAME 'salammm' "; expected "identifier"; SQL statement:
+alter table 'uuduud' rename 'salammm' [42001-196]
+2017-08-13 11:27:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ALTER TABLE UUDUUD RENAME  SALAMMM[*] "; expected "COLUMN, CONSTRAINT, TO"; SQL statement:
+alter table uuduud rename  salammm [42001-196]

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: auth-service
+  cloud:
+    config:
+      fail-fast: true
+      password: ${CONFIG_SERVICE_PASSWORD:m34VWxcFy6g8C2/sCAATRMeBsgCmMRvv1whKm/qtXXo=}
+      discovery:
+        enabled: true
+        serviceId: config-server
+#      name: account
+#      profile: development
+#      label: develop

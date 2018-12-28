@@ -1,0 +1,8 @@
+spring: 
+  application:
+    name: monitoring
+  cloud:
+    config:
+      password: ${CONFIG_SERVICE_PASSWORD:m34VWxcFy6g8C2/sCAATRMeBsgCmMRvv1whKm/qtXXo=}
+      discovery:
+        enabled: true

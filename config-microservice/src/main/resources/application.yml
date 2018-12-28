@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+  profiles:
+     active: native
+     
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URI:http://localhost:8761/eureka/}
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    
+server:
+  port: 8888
+
+security:
+  user:
+    password: ${CONFIG_SERVICE_PASSWORD:m34VWxcFy6g8C2/sCAATRMeBsgCmMRvv1whKm/qtXXo=}
